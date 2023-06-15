@@ -1,0 +1,1 @@
+Used to learn and practice TypeScript
