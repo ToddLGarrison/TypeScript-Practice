@@ -46,3 +46,7 @@ const logWeather = ({date, weather}: {date: Date, weather: string }): void=>{
 }
 
 logWeather(forecastWeather)
+
+
+//Object destructuring
+
