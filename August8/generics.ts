@@ -39,3 +39,27 @@ function printAnything<T>(array: T[]):void {
         console.log(array[i])
     }
 }
+
+class Car {
+    print() {
+        console.log('I am a car');
+    }
+}
+class House {
+    print() {
+        console.log('I am a house');
+    }
+}
+
+interface Printable{
+    print(): void;
+}
+
+function printCarsOrHouses<T extends Printable>(array: T[]):void {
+    for (let i = 0; i < array.length; i++){
+        array[i].print();
+    }
+}
+
+printCarsOrHouses<House>([new House(), new House()]);
+printCarsOrHouses<House>([new Car(), new Car()]);
