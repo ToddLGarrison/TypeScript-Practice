@@ -21,3 +21,21 @@ class ArrayOfAnything<T> {
         return this.collection[index];
     }
 }
+
+function printStrings(array: string[]):void {
+    for (let i = 0; i < array.length; i++) {
+        console.log(array[i])
+    }
+}
+
+function printnumbers(array: number[]):void {
+    for (let i = 0; i < array.length; i++) {
+        console.log(array[i])
+    }
+}
+
+function printAnything<T>(array: T[]):void {
+    for (let i = 0; i < array.length; i++) {
+        console.log(array[i])
+    }
+}
